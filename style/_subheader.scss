@@ -1,0 +1,71 @@
+
+.subheader {
+    margin: 0rem 1.5rem 0rem 1.5rem;
+    height: 80px;
+    left: 0;
+    right: 0;
+    background-color: $primary;
+    transform: translateY(-40px);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    
+
+    @include breakpoint-up(large) {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        margin-left: 6rem;
+        margin-right: 6rem;   
+        height: 100px;   
+        transform: translateY(-50px); 
+    }
+
+    &__text {
+        width: 50%;
+        padding-left: 1.5rem;
+
+        h2 {
+            font-family: 'Josefin Sans';
+            text-transform: uppercase;
+            color: black;
+            font-size: $fontsize-md;
+
+            @include breakpoint-up(large) {
+                font-size: $fontsize-lg;
+            }
+        }
+
+    }
+
+    &__cta {
+        width: 50%;
+        padding-right: 1.5rem;
+        font-family: 'Josefin Sans';
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        h5 {
+            font-family: 'Josefin Sans';
+            text-transform: uppercase;
+            color: black;
+            font-size: $fontsize-md;
+            padding-right: 1.5rem;
+
+            @include breakpoint-up(large) {
+                font-size: $fontsize-lg;
+            }
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            padding: .5rem;
+            border-radius: 50%;
+            border: 1px solid #111111;
+            margin-top: -.3rem;
+        }
+    }
+}

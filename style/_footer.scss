@@ -1,0 +1,116 @@
+.footer {
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(260px);
+    position: relative;
+    z-index: -1;
+
+    @include breakpoint-up(large) {
+        transform: translateY(0px);
+        flex-direction: row;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0 2rem 0;
+
+        @include breakpoint-up(large) {
+            width: 25%;
+            margin: 6rem 0 2rem 0;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-family: 'Josefin Sans';
+        }
+
+        a {
+            text-transform: uppercase;
+            font-family: 'Josefin Sans';
+            margin-top: 1rem;
+            transition: color 300ms ease-in-out;
+        }
+
+        > a:hover {
+            color: $primary;
+        }
+
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0 2rem 0;
+
+        @include breakpoint-up(large) {
+            width: 30%;
+            margin: 6rem 0 2rem 0;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-family: 'Josefin Sans';
+            margin-bottom: 1rem;
+            
+        }
+
+        > p {
+            width: 50%;
+            text-transform: uppercase;
+            font-family: 'Josefin Sans';
+            line-height: 2;
+
+            @include breakpoint-up(large) {
+                width: 75%;
+            }
+        }
+        
+    }
+
+    &__social {
+
+        margin: 2rem 0 2rem 0;
+
+        @include breakpoint-up(large) {
+            width: 30%;
+            margin: 6rem 0 2rem 0;
+        }
+
+        > h2 {
+            text-transform: uppercase;
+            font-family: 'Josefin Sans';
+            margin-bottom: 1rem;
+        }
+
+        
+
+        &--icons {
+            display: flex;
+
+            > a {
+                margin-right: 1rem;
+                border: 1px solid $white;
+                background-color:  #111111;
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                transition: background-color 300ms ease-in-out;
+
+                > img {
+                    padding: 10px;
+                    object-position: center center;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            > a:hover {
+                background-color: $primary;
+            }
+
+        }
+
+    }
+}
