@@ -1,4 +1,4 @@
-# Frontend Mentor - Loopstudios landing page
+# Landing Page - Loopstudios Event Company landing page
 
 ## Welcome! 👋
 
